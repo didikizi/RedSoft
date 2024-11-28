@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS human (
+		id SERIAL PRIMARY KEY,
+		status INT NOT NULL,
+		surname VARCHAR(255) NOT NULL,
+		name VARCHAR(255) NOT NULL,
+		age INT,
+		fatherland VARCHAR(255) NOT NULL,
+		national VARCHAR(255) NOT NULL,
+		sex VARCHAR(255)NOT NULL
+		);

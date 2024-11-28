@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:14.4
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "pass"
+      POSTGRES_DB: "test"
+      PGDATA: /data/postgres
+    volumes:
+       - ~/go-test-task:/data/postgres
